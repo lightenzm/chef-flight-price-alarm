@@ -14,7 +14,7 @@ end
 
 bash 'install dependencies and run application' do
     code <<-EOH
-    sudo apt install python3-pip
+    sudo apt install -y python3-pip
     cd /opt/flights/flight_price_alarm
     pip3 install -r /opt/flights/flight_price_alarm/requirements.txt
     python3 /opt/flights/flight_price_alarm/flightPriceAlarmServer.py
