@@ -1,0 +1,13 @@
+{
+	"name": "flight-price-alarm",
+	"override_attributes": {
+		"packages-cookbooks": [
+			"python"
+		]
+	},
+	"run_list": [
+		"recipe[packages]", "recipe[flight-price-alarm]"
+	]
+}
+
+
