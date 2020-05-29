@@ -1,8 +1,8 @@
 package 'awscli'
 bash 'download and extract app tar' do
     code <<-EOH
-    export AWS_ACCESS_KEY_ID=AKIA6NJOWRNIWR43AAC3
-    export AWS_SECRET_ACCESS_KEY=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
+    export AWS_ACCESS_KEY_ID=
+    export AWS_SECRET_ACCESS_KEY=
     export AWS_DEFAULT_REGION=eu-west-1   
     aws s3 cp s3://flightpricealarm/flight_price_alarm.tar.gz /tmp/flight_price_alarm.tar.gz
     rm -rf /opt/flights
